@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.4.1/aframe.min.js"> </script>
+  </head>
+
+  <body>
+        
+    <a-scene background = "blue">
+
+        <a-entity position="0 0 -5"></a-entity>
+        
+      <!-- Room -->
+      <a-box position="0 2 -5" rotation="0 0 0" width="10" height="4" depth="0.2" color="white"></a-box>
+      
+      <!-- Floor -->
+      <a-plane position="0 0 -5" rotation="-90 0 0" width="10" height="10" color="gray"></a-plane>
+      
+      <!-- Ceiling -->
+      <a-plane position="0 4.2 -5" rotation="90 0 0" width="10" height="10" color="white"></a-plane>
+      
+      <!-- Back wall -->
+      <a-plane position="0 2.1 -5.1" rotation="0 0 0" width="10" height="4" color="white"></a-plane>
+      
+      <!-- Left wall -->
+      <a-plane position="-5.1 2.1 0" rotation="0 -90 0" width="10" height="4" color="white"></a-plane>
+      
+      <!-- Right wall -->
+      <a-plane position="5.1 2.1 0" rotation="0 90 0" width="10" height="4" color="white"></a-plane>
+      
+      <!-- Primitives with textures -->
+      <a-sphere position="0.5 1 -4" radius="1" color="white" material="src: texture1.jpg"></a-sphere>
+      
+      <a-cylinder position="-2 0.5 -4" rotation="0 0 0" height="1" radius="0.5" color="white" material="src: texture2.jpg"></a-cylinder>
+      
+      <a-torus position="2 0.5 -4" radius="0.5" radius-tubular="0.1" color="white" material="src: texture3.jpg"></a-torus>
+      
+      <a-cone position="4 0.5 -4" rotation="-90 0 0" height="1" radius-bottom="0.5" radius-top="0" color="white" material="src: texture4.jpg"></a-cone>
+      
+    </a-scene>
+  </body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
